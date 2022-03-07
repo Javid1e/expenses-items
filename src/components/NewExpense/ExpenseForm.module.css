@@ -1,0 +1,44 @@
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  
+}
+
+.new-expense__actions {
+  text-align: right;
+}
+
+.new-expense__control input:focus {
+outline: none;
+background: #fad0ec;
+border-color: #8b005d;
+}
+.new-expense__control.invalid input{
+border-color: red;
+background: #ffd7d7;
+}
+.new-expense__control.invalid label{
+color: red;
+}
+@media (max-width: 768px) {
+.new-expense__controls {
+  display: flow-root ;
+}
+}
